@@ -513,55 +513,7 @@
       </div>
     </div>
 
-
-    <!--=====================================STATUS============================================== -->
-
-    <div class="fade-up d4 flex gap-4 mt-10 flex-wrap">
-
-
-      <div class="stat-box">
-        <div class="font-orbit text-2xl neon-blue font-black">
-          13
-        </div>
-        <div class="font-mono text-xs text-white/25 mt-1 tracking-widest">Tecnologias</div>
-        <div
-          style="position:absolute;top:0;left:0;width:11px;height:11px;border-top:2px solid  #00AAFF;border-left:2px solid  #00AAFF;">
-        </div>
-        <div
-          style="position:absolute;bottom:0;right:0;width:11px;height:11px;border-bottom:2px solid  #00AAFF;border-right:2px solid  #00AAFF;">
-        </div>
-      </div>
-
-      <div class="stat-box">
-        <div class="font-orbit text-2xl green font-black">
-          ∞
-        </div>
-        <div class="font-mono text-xs text-white/25 mt-1 tracking-widest">COMMITS</div>
-        <div
-          style="position:absolute;top:0;left:0;width:11px;height:11px;border-top:2px solid #00AAFF;border-left:2px solid #00AAFF;">
-        </div>
-        <div
-          style="position:absolute;bottom:0;right:0;width:11px;height:11px;border-bottom:2px solid #00AAFF;border-right:2px solid #00AAFF;">
-        </div>
-      </div>
-
-      <div class="stat-box">
-        <div class="font-orbit text-2xl white font-black">
-          100%
-        </div>
-        <div class="font-mono text-xs text-white/25 mt-1 tracking-widest">DEDICAÇÃO</div>
-        <div
-          style="position:absolute;top:0;left:0;width:11px;height:11px;border-top:2px solid  #00AAFF;border-left:2px solid  #00AAFF;">
-        </div>
-        <div
-          style="position:absolute;bottom:0;right:0;width:11px;height:11px;border-bottom:2px solid  #00AAFF;border-right:2px solid  #00AAFF;">
-        </div>
-      </div>
-    </div>
   </header>
-
-
-
 
 
 
@@ -576,7 +528,7 @@
     <span class="font-mono text-xs text-white/20 tracking-widest mr-2">FILTRAR:</span>
     <button onclick="fc('all')" class="fbtn active" data-f="all">TODOS</button>
     <button onclick="fc('web')" class="fbtn" data-f="web">WEB</button>
-    <button onclick="fc('mobile')" class="fbtn" data-f="mobile">MOBILE</button>
+    <!--<button onclick="fc('mobile')" class="fbtn" data-f="mobile">MOBILE</button>-->
     <button onclick="fc('desktop')" class="fbtn" data-f="desktop">DESKTOP</button>
     <button onclick="fc('game')" class="fbtn" data-f="game">GAME</button>
     <button onclick="fc('pcb')" class="fbtn" data-f="pcb">PCB</button>
@@ -595,6 +547,8 @@
   <main class="relative z-10 px-8 md:px-16 mt-8 pb-28">
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="pgrid">
+     
+     
       <!-- Loja de Roupas -->
       <article data-cat="web" class="project-card fade-up d2 cursor-pointer group">
         <div
@@ -625,6 +579,11 @@
 
 
 
+
+
+
+
+
       <!-- Clínica Médica -->
       <article data-cat="web" class="project-card fade-up d3 cursor-pointer group">
         <div
@@ -650,6 +609,12 @@
           <div class="flex gap-5 mt-4"><a href="#" target="_blank" class="nl">Ver ↗</a></div>
         </div>
       </article>
+
+
+
+
+
+
 
 
        <!-- Laboratório de Circuitos Lógicos -->
@@ -756,21 +721,25 @@
 
     <!-- ==================================================================== TECNOLOGIAS ================================================================================ -->
   <div id="tech-marquee" class="relative z-10 border-y border-white/5 py-4 overflow-hidden" style="background:rgba(0,170,255,0.03);">
+    
     <div id="tech-track-wrapper" class="absolute inset-0 flex items-center will-change-transform" style="transform: translateX(0);">
+     
+      <!-- STACK DE TECNOLOGIAS -->
       <div id="tech-track" class="flex items-center gap-8 px-8 md:px-16 min-w-max">
+        
         <div class="flex items-center gap-2 text-white/40">
           <i class="devicon-html5-plain colored"></i>
           <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><span class="font-mono text-xs tracking-widest">HTML5</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <i class="devicon-tailwindcss-plain colored text-2xl"></i>
+          <i class="devicon-tailwindcss-plain colored "></i>
           <a href="https://tailwindcss.com/" target="_blank"><span class="font-mono text-xs tracking-widest">Tailwind CSS</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <i class="devicon-javascript-plain colored"></i>
-          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><span class="font-mono text-xs tracking-widest">JavaScript</span></a>
+          <i class="devicon-react-plain colored"></i>
+          <a href="https://reactjs.org/" target="_blank"><span class="font-mono text-xs tracking-widest">React</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
@@ -779,51 +748,54 @@
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="25" class="text-2xl">
-          <a href="https://python.org/" target="_blank"><span class="font-mono text-xs tracking-widest">Python</span></a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gnu-octave-logo.svg/1280px-Gnu-octave-logo.svg.png" class="w-5">
+          <a href="https://www.octave.org/" target="_blank"><span class="font-mono text-xs tracking-widest">Octave</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" width="25">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" class="w-5">
           <a href="https://www.lua.org/portugues.html" target="_blank"><span class="font-mono text-xs tracking-widest">Lua</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <i class="devicon-docker-plain colored text-2xl"></i>
+          <i class="devicon-docker-plain colored"></i>
           <a href="https://www.docker.com/" target="_blank"><span class="font-mono text-xs tracking-widest">Docker</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <img src="https://www.notion.com/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fpublic.notion-static.com%2Fcreator_images%2FFrame_2147224304.png&w=256&q=75" width="20">
+          <i class="devicon-docker-plain colored"></i>
+          <a href="https://www.docker.com/" target="_blank"><span class="font-mono text-xs tracking-widest">Docker</span></a>
+        </div>
+
+        <div class="flex items-center gap-2 text-white/40">
+          <img src="https://www.notion.com/_next/image?url=https%3A%2F%2Fs3.us-west-2.amazonaws.com%2Fpublic.notion-static.com%2Fcreator_images%2FFrame_2147224304.png&w=256&q=75" class="w-5">
           <a href="https://lovable.dev/dashboard?utm_device=c&utm_source=google&utm_medium=paid_search_branded&utm_campaign=google-br-b2c-prospecting-evergreen-subscription-XB+-+Search+-+Lovable+-+CORE&campaignid=23350529747&gad_source=1&gad_campaignid=23350529747&gbraid=0AAAAA-iIxGcy9gn_JUgXSg_RO1YPwvtbx&gclid=CjwKCAjw5NvPBhAoEiwA_2egfg6w9H3UG5Rn3uxhfdIDE3OTVxA_o4bA66m8cONo4uFe4aKsqcBVpxoCenwQAvD_BwE" target="_blank"><span class="font-mono text-xs tracking-widest">Lovable</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <img src="https://images.seeklogo.com/logo-png/55/2/claude-logo-png_seeklogo-554534.png" width="20">
-          <a href="https://claude.ai/new" target="_blank"><span class="font-mono text-xs tracking-widest">Claude</span></a>
+          <img src="https://miro.medium.com/1*i64DAg71FrLIH0PujstzWw.png" class="w-5">
+          <a href="https://github.com/features/copilot" target="_blank"><span class="font-mono text-xs tracking-widest">Copilot</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/supabase.webp" width="20">
+          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/supabase.webp" class="w-5">
           <a href="https://supabase.com/" target="_blank"><span class="font-mono text-xs tracking-widest">Supabase</span></a>
         </div>
 
         <div class="flex items-center gap-2 text-white/40">
-          <img src="https://circuitverse-docs.netlify.app/img/favicon.ico" width="20">
+          <img src="https://circuitverse-docs.netlify.app/img/favicon.ico" class="w-5">
           <a href="https://circuitverse.org/" target="_blank"><span class="font-mono text-xs tracking-widest">CircuitVerse</span></a>
         </div>
 
-        <div class="flex items-center gap-2 text-white/40">
-          <img src="https://i.redd.it/x6gnx2y78vy51.png" width="20">
-          <a href="https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html" target="_blank"><span class="font-mono text-xs tracking-widest">LTspice</span></a>
-        </div>
+       
       </div>
+
       <div id="tech-track-clone" class="flex items-center gap-8 min-w-max"></div>
+   
     </div>
   </div>
 
      
-
 
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -834,23 +806,31 @@
 
     if (techTrack && techClone && techWrapper) {
       techClone.innerHTML = techTrack.innerHTML;
-      let trackWidth = techTrack.offsetWidth;
+      const gap = 180; // espaço entre a faixa original e a faixa clonada
+      techClone.style.order = '-1';
+      techWrapper.style.gap = `${gap}px`;
+
+      let trackWidth = techTrack.scrollWidth + gap;
       let offset = -trackWidth;
       let lastTime = performance.now();
+      const duration = 22000; // tempo para um ciclo completo, mais lento
 
       const resizeTechMarquee = () => {
-        trackWidth = techTrack.offsetWidth;
+        trackWidth = techTrack.scrollWidth + gap;
         offset = -trackWidth;
         techWrapper.style.transform = `translateX(${offset}px)`;
       };
 
-      const duration = 35000; // tempo de ciclo completo em ms
       const animateTechMarquee = (now) => {
         const delta = now - lastTime;
         lastTime = now;
-        const speed = trackWidth / (duration / 1000); // pixels por segundo
-        offset += (speed * delta) / 1000;
-        if (offset >= 0) offset -= trackWidth;
+        const speed = trackWidth / duration; // px por ms
+        offset += speed * delta;
+
+        if (offset >= 0) {
+          offset -= trackWidth;
+        }
+
         techWrapper.style.transform = `translateX(${offset}px)`;
         requestAnimationFrame(animateTechMarquee);
       };
