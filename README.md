@@ -1,1 +1,1 @@
-# <img src="./logo.png" width="250px"> Dev
+# <img src="./logo.png" width="100px">
